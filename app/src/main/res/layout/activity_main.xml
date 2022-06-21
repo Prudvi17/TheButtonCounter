@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/purple_500">
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/amita_bold"
+            android:text="Tap Counts"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtTapCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLabel"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/amita"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/btnTapMe"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTapCounts"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/buttonColor"
+            android:fontFamily="@font/amita"
+            android:text="Tap Me"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnTapMe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/amita_bold"
+            android:text="Reset"
+            android:textColor="@color/buttonColor"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
